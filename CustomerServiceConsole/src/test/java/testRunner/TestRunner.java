@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		dryRun=false,
 		monochrome = true,
 		plugin= {"pretty","html:report/html-test-outputReport.html"},
-		tags = "@CSC"
+		tags = "@TMOSMP-38904,@TMOSMP-38911"
 		)
 
 public class TestRunner {

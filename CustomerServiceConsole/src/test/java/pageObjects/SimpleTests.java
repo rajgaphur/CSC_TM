@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -12,6 +13,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +23,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SimpleTests {
@@ -55,7 +59,8 @@ public class SimpleTests {
 	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	    driver.manage().window().maximize();
 	    
-	    st.clickSubMenu(driver);
+	    st.displaySelectItems(driver);
+	    //st.clickSubMenu(driver);
 	    //st.keys(driver);
 	    //st.getScreenshot(driver);
 	    //st.displaySelect(driver);
@@ -100,6 +105,22 @@ public class SimpleTests {
 		
 		Thread.sleep(3000);
 		carHifi.click();
+		
+		
+	}
+	
+	public void displaySelectItems(WebDriver driver) throws InterruptedException {
+		driver.get("https://jqueryui.com/");
+	    System.out.println(driver.getTitle());
+	    
+		List<WebElement> menuElectronics= driver.findElements(By.xpath("//*[@id='sidebar']/aside[2]/ul/li"));
+		
+		Thread.sleep(2000);
+		for (WebElement webElement : menuElectronics) {
+			System.out.println(webElement.getText());
+		}
+		
+		
 		
 		
 	}
@@ -149,7 +170,7 @@ public class SimpleTests {
 		WebElement ele = driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div/a/img"));
 		ele.click();
 		Select s =  new Select(ele);
-		
+
 		for (WebElement iterable_element : s.getOptions()) {
 			System.out.println(iterable_element.getText());
 		}
@@ -279,10 +300,13 @@ public class SimpleTests {
 		
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void fluentWait(WebDriver driver) {
 		driver.get("https://www.amazon.in/");
 		
-		//Wait w = new FluentWait(driver).withTimeout(Duration.ofMillis(10000)).pollingEvery(Duration.ofMillis(2000)).ignoring(NoSuchElementException.class);
+		Wait w = new FluentWait(driver).withTimeout(Duration.ofMillis(10000)).pollingEvery(Duration.ofMillis(2000)).ignoring(NoSuchElementException.class);
+		
+		
 	}
 	
 	public void implicitWait(WebDriver driver) {
