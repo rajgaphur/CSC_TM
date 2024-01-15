@@ -5,21 +5,18 @@ pipeline {
 		stage('Build'){
 			steps{
 				echo "Building the project....."
-				bat "cd C:\Users\ilkal\.jenkins\workspace\DeclarativePipeline2_CSC\CustomerServiceConsole"
 				bat "mvn clean"
 			}		
 		}
 		stage('Test'){
 			steps{
 				echo "Testing the project......"
-				bat "cd C:\Users\ilkal\.jenkins\workspace\DeclarativePipeline2_CSC\CustomerServiceConsole"
 				bat "mvn test"
 			}		
 		}
 		stage('Compile'){
 			steps{
 				echo "Compiling the project...."
-				bat "cd C:\Users\ilkal\.jenkins\workspace\DeclarativePipeline2_CSC\CustomerServiceConsole"
 				bat "mvn compile"
 			}		
 		}
