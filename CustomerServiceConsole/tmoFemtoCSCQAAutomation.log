@@ -2298,3 +2298,96 @@
 164195 2024-01-03 20:49:11,309 [main] INFO :  ********************Config Properties******************
 164195 2024-01-03 20:49:11,309 [main] INFO :  ********************Opening Browser********************
 166796 2024-01-03 20:49:13,910 [main] INFO :  ***********Opening URL****************
+0    2024-01-15 16:29:43,163 [main] INFO :  ********************Config Properties******************
+1    2024-01-15 16:29:43,164 [main] INFO :  ********************Opening Browser********************
+132  2024-01-15 16:29:43,295 [main] DEBUG:  Using Log4J as the default logging framework
+138  2024-01-15 16:29:43,301 [main] DEBUG:  -Dio.netty.leakDetection.level: simple
+139  2024-01-15 16:29:43,302 [main] DEBUG:  -Dio.netty.leakDetection.targetRecords: 4
+143  2024-01-15 16:29:43,306 [main] DEBUG:  Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@32cb636e
+161  2024-01-15 16:29:43,324 [main] DEBUG:  -Dio.netty.noUnsafe: false
+161  2024-01-15 16:29:43,324 [main] DEBUG:  Java version: 17
+163  2024-01-15 16:29:43,326 [main] DEBUG:  sun.misc.Unsafe.theUnsafe: available
+165  2024-01-15 16:29:43,328 [main] DEBUG:  sun.misc.Unsafe.copyMemory: available
+165  2024-01-15 16:29:43,328 [main] DEBUG:  sun.misc.Unsafe.storeFence: available
+166  2024-01-15 16:29:43,329 [main] DEBUG:  java.nio.Buffer.address: available
+167  2024-01-15 16:29:43,330 [main] DEBUG:  direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+167  2024-01-15 16:29:43,330 [main] DEBUG:  java.nio.Bits.unaligned: available, true
+168  2024-01-15 16:29:43,331 [main] DEBUG:  jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @61a485d2
+170  2024-01-15 16:29:43,333 [main] DEBUG:  java.nio.DirectByteBuffer.<init>(long, int): unavailable
+170  2024-01-15 16:29:43,333 [main] DEBUG:  sun.misc.Unsafe: available
+172  2024-01-15 16:29:43,335 [main] DEBUG:  maxDirectMemory: 4213178368 bytes (maybe)
+172  2024-01-15 16:29:43,335 [main] DEBUG:  -Dio.netty.tmpdir: C:\Users\ilkal\AppData\Local\Temp (java.io.tmpdir)
+172  2024-01-15 16:29:43,335 [main] DEBUG:  -Dio.netty.bitMode: 64 (sun.arch.data.model)
+172  2024-01-15 16:29:43,335 [main] DEBUG:  Platform: Windows
+173  2024-01-15 16:29:43,336 [main] DEBUG:  -Dio.netty.maxDirectMemory: -1 bytes
+173  2024-01-15 16:29:43,336 [main] DEBUG:  -Dio.netty.uninitializedArrayAllocationThreshold: -1
+174  2024-01-15 16:29:43,337 [main] DEBUG:  java.nio.ByteBuffer.cleaner(): available
+174  2024-01-15 16:29:43,337 [main] DEBUG:  -Dio.netty.noPreferDirect: false
+181  2024-01-15 16:29:43,344 [main] DEBUG:  org.jctools-core.MpscChunkedArrayQueue: available
+207  2024-01-15 16:29:43,370 [main] DEBUG:  -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+207  2024-01-15 16:29:43,370 [main] DEBUG:  -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+404  2024-01-15 16:29:43,567 [main] DEBUG:  Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+404  2024-01-15 16:29:43,567 [main] DEBUG:  Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+433  2024-01-15 16:29:43,596 [main] DEBUG:  -Dio.netty.eventLoopThreads: 16
+446  2024-01-15 16:29:43,609 [main] DEBUG:  -Dio.netty.noKeySetOptimization: false
+446  2024-01-15 16:29:43,609 [main] DEBUG:  -Dio.netty.selectorAutoRebuildThreshold: 512
+562  2024-01-15 16:29:43,725 [main] DEBUG:  -Dio.netty.allocator.numHeapArenas: 16
+562  2024-01-15 16:29:43,725 [main] DEBUG:  -Dio.netty.allocator.numDirectArenas: 16
+562  2024-01-15 16:29:43,725 [main] DEBUG:  -Dio.netty.allocator.pageSize: 8192
+562  2024-01-15 16:29:43,725 [main] DEBUG:  -Dio.netty.allocator.maxOrder: 9
+562  2024-01-15 16:29:43,725 [main] DEBUG:  -Dio.netty.allocator.chunkSize: 4194304
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.smallCacheSize: 256
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.normalCacheSize: 64
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.cacheTrimInterval: 8192
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.useCacheForAllThreads: false
+563  2024-01-15 16:29:43,726 [main] DEBUG:  -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+580  2024-01-15 16:29:43,743 [main] DEBUG:  -Dio.netty.allocator.type: pooled
+580  2024-01-15 16:29:43,743 [main] DEBUG:  -Dio.netty.threadLocalDirectBufferSize: 0
+580  2024-01-15 16:29:43,743 [main] DEBUG:  -Dio.netty.maxThreadLocalCharBufferSize: 16384
+917  2024-01-15 16:29:44,080 [Forwarding newSession on session null to remote] DEBUG:  -Dio.netty.processId: 176 (auto-detected)
+920  2024-01-15 16:29:44,083 [Forwarding newSession on session null to remote] DEBUG:  -Djava.net.preferIPv4Stack: true
+920  2024-01-15 16:29:44,083 [Forwarding newSession on session null to remote] DEBUG:  -Djava.net.preferIPv6Addresses: false
+1046 2024-01-15 16:29:44,209 [Forwarding newSession on session null to remote] DEBUG:  Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+1046 2024-01-15 16:29:44,209 [Forwarding newSession on session null to remote] DEBUG:  Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+1165 2024-01-15 16:29:44,328 [Forwarding newSession on session null to remote] DEBUG:  -Dio.netty.machineId: 10:a5:1d:ff:fe:04:de:c7 (auto-detected)
+1218 2024-01-15 16:29:44,381 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.buffer.checkAccessible: true
+1219 2024-01-15 16:29:44,382 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.buffer.checkBounds: true
+1219 2024-01-15 16:29:44,382 [AsyncHttpClient-1-2] DEBUG:  Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@5a4df4fd
+1240 2024-01-15 16:29:44,403 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.recycler.maxCapacityPerThread: 4096
+1240 2024-01-15 16:29:44,403 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.recycler.ratio: 8
+1240 2024-01-15 16:29:44,403 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.recycler.chunkSize: 32
+1240 2024-01-15 16:29:44,403 [AsyncHttpClient-1-2] DEBUG:  -Dio.netty.recycler.blocking: false
+3629 2024-01-15 16:29:46,792 [AsyncHttpClient-1-2] DEBUG:  brotli4j not in the classpath; Brotli support will be unavailable.
+3780 2024-01-15 16:29:46,943 [main] INFO :  ***********Opening URL****************
+29191 2024-01-15 16:30:12,354 [main] INFO :  ********************Config Properties******************
+29191 2024-01-15 16:30:12,354 [main] INFO :  ********************Opening Browser********************
+31256 2024-01-15 16:30:14,419 [main] INFO :  ***********Opening URL****************
+44711 2024-01-15 16:30:27,874 [main] INFO :  ********************Config Properties******************
+44712 2024-01-15 16:30:27,875 [main] INFO :  ********************Opening Browser********************
+46982 2024-01-15 16:30:30,145 [main] INFO :  ***********Opening URL****************
+59101 2024-01-15 16:30:42,264 [main] INFO :  ********************Config Properties******************
+59102 2024-01-15 16:30:42,265 [main] INFO :  ********************Opening Browser********************
+61184 2024-01-15 16:30:44,347 [main] INFO :  ***********Opening URL****************
+74157 2024-01-15 16:30:57,320 [main] INFO :  ********************Config Properties******************
+74158 2024-01-15 16:30:57,321 [main] INFO :  ********************Opening Browser********************
+76080 2024-01-15 16:30:59,243 [main] INFO :  ***********Opening URL****************
+90303 2024-01-15 16:31:13,466 [main] INFO :  ********************Config Properties******************
+90303 2024-01-15 16:31:13,466 [main] INFO :  ********************Opening Browser********************
+94363 2024-01-15 16:31:17,526 [main] INFO :  ***********Opening URL****************
+107404 2024-01-15 16:31:30,567 [main] INFO :  ********************Config Properties******************
+107404 2024-01-15 16:31:30,567 [main] INFO :  ********************Opening Browser********************
+109993 2024-01-15 16:31:33,156 [main] INFO :  ***********Opening URL****************
+120753 2024-01-15 16:31:43,916 [main] INFO :  ********************Config Properties******************
+120755 2024-01-15 16:31:43,918 [main] INFO :  ********************Opening Browser********************
+124074 2024-01-15 16:31:47,237 [main] INFO :  ***********Opening URL****************
+142952 2024-01-15 16:32:06,115 [main] INFO :  ********************Config Properties******************
+142953 2024-01-15 16:32:06,116 [main] INFO :  ********************Opening Browser********************
+145181 2024-01-15 16:32:08,344 [main] INFO :  ***********Opening URL****************
+160760 2024-01-15 16:32:23,923 [main] INFO :  ********************Config Properties******************
+160761 2024-01-15 16:32:23,924 [main] INFO :  ********************Opening Browser********************
+162908 2024-01-15 16:32:26,071 [main] INFO :  ***********Opening URL****************
+173996 2024-01-15 16:32:37,159 [main] INFO :  ********************Config Properties******************
+173997 2024-01-15 16:32:37,160 [main] INFO :  ********************Opening Browser********************
+177140 2024-01-15 16:32:40,303 [main] INFO :  ***********Opening URL****************

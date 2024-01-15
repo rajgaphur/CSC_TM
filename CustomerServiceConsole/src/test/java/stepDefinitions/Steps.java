@@ -192,7 +192,7 @@ public class Steps extends BaseClass {
 
 		String versionDetails = msisdnLoginPage.getVersionText();
 		System.out.println("Version Details : " + versionDetails);
-		String versionData = "Version: 23.2_SCM-SNAPSHOT, Build: 1105, Timestamp: 23_10_30_05:00";
+		String versionData = "Version: 23.2_SCM-SNAPSHOT, Build: 1107, Timestamp: 23_10_30_05:00";
 		// String versionData = "Version: "+getversion(22.3_SCM-SNAPSHOT)+", Build:
 		// "+get(Build950)+", Timestamp: "+getTimestramp(22_07_07_15:31)";
 		Assert.assertEquals("CSC Hearder", "Customer Service Console", cscHeaderText);
